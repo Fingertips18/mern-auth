@@ -1,4 +1,4 @@
-![Banner](public/banner.webp)
+<img src="public/banner.png" alt="Banner" width="100%">
 
 # 🔒 MERN-Auth
 
@@ -128,8 +128,8 @@ Feel free to fork this repository and contribute by submitting a pull request. A
 
 #### 🧑‍💻 Contributors
 
-<a href="https://github.com/Fingertips18/scroll-wheel-date-picker/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Fingertips18/scroll-wheel-date-picker" />
+<a href="https://github.com/Fingertips18/mern-auth/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Fingertips18/mern-auth" />
 </a>
 
 _Ghian Tan_ @ _Fingertips_ ([Github](https://github.com/Fingertips18))
