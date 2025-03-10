@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "axios": "^1.8.1",
-    "framer-motion": "^12.4.10",
+    "framer-motion": "^12.4.11",
     "lucide-react": "^0.479.0",
     "mern-auth-backend": "file:..",
     "react": "^18.3.1",
