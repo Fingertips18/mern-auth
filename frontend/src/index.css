@@ -1,8 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: Poppins, sans-serif;
+
+  --color-background: #fafbfb;
+  --color-foreground: #0f1113;
+  --color-primary: #718291;
+  --color-secondary: #c1b3af;
+  --color-accent: #adb099;
+  --color-dark-background: #050606;
+  --color-dark-foreground: #ebedef;
+  --color-dark-primary: #6d7e8d;
+  --color-dark-secondary: #51423e;
+  --color-dark-accent: #62654e;
+
+  --drop-shadow-glow: 0 0px 15px var(--accent), 0 0px 60px var(--accent);
+  --drop-shadow-foreground-glow: 0 0px 15px var(--foreground),
+    0 0px 60px var(--foreground);
+  --drop-shadow-primary-glow: 0 0px 15px var(--primary),
+    0 0px 60px var(--primary);
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility flex-between {
+  @apply flex items-center justify-between;
+}
+
+@utility flex-start {
+  @apply flex items-center justify-start;
+}
+
+@utility flex-end {
+  @apply flex items-center justify-end;
+}
 
 @layer base {
   :root {
@@ -27,20 +80,5 @@
   html,
   body {
     @apply p-0 m-0 bg-background text-foreground font-poppins;
-  }
-}
-
-@layer utilities {
-  .flex-center {
-    @apply flex items-center justify-center;
-  }
-  .flex-between {
-    @apply flex items-center justify-between;
-  }
-  .flex-start {
-    @apply flex items-center justify-start;
-  }
-  .flex-end {
-    @apply flex items-center justify-end;
   }
 }
