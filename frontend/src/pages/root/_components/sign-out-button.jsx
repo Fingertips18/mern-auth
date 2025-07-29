@@ -40,7 +40,7 @@ const SignOutButton = () => {
         delay: 0.5,
       }}
       className="mt-5 w-full py-3 px-4 bg-accent font-bold rounded-lg shadow-lg hover:brightness-90
-        focus:outline-none hover:drop-shadow-glow active:scale-90 flex-center
+        focus:outline-hidden hover:drop-shadow-glow active:scale-90 flex-center
         disabled:bg-accent/50 disabled:text-foreground/50 disabled:pointer-events-none"
       disabled={loading}
       onClick={onClick}
