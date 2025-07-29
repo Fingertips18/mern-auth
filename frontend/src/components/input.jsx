@@ -18,7 +18,7 @@ const Input = ({ icon: Icon, isValid, ...props }) => {
       <input
         {...props}
         type={type}
-        className={`w-full pl-10 py-2 bg-secondary bg-opacity-50 rounded-lg border  outline-none
+        className={`w-full pl-10 py-2 bg-secondary bg-opacity-50 rounded-lg border  outline-hidden
         placeholder-foreground/40 transition disabled:bg-opacity-25 disabled:border-secondary/50 
         disabled:text-foreground/50 disabled:pointer-events-none
         ${
