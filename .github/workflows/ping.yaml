@@ -1,0 +1,16 @@
+name: Ping Site
+
+on:
+  schedule:
+    - cron: "*/30 * * * *" # Every 30 minutes UTC
+  workflow_dispatch: # Allow manual trigger too
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Random Delay (0–119 seconds)
+        run: sleep $((RANDOM % 120))
+
+      - name: Site Visit
+        run: curl -s --fail https://mern-auth-tau7.onrender.com || echo "Ping failed"
