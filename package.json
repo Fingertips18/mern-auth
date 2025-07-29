@@ -30,7 +30,7 @@
     "@types/bcryptjs": "^3.0.0",
     "@types/cookie-parser": "^1.4.9",
     "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.1",
+    "@types/express": "^5.0.3",
     "@types/serve-favicon": "^2.5.7",
     "nodemon": "^3.1.10"
   }
