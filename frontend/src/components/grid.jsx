@@ -21,7 +21,7 @@ const Grid = () => {
           return (
             <span
               key={i}
-              className="border border-primary rounded-sm bg-background transition-all hover:drop-shadow-primary-glow hover:scale-75"
+              className="border border-primary rounded-xs bg-background transition-all hover:drop-shadow-primary-glow hover:scale-75"
             />
           );
         })}
@@ -29,11 +29,11 @@ const Grid = () => {
 
       <span
         aria-hidden="true"
-        className="fixed w-full h-full bg-gradient-to-r from-background via-transparent to-background pointer-events-none"
+        className="fixed w-full h-full bg-linear-to-r from-background via-transparent to-background pointer-events-none"
       />
       <span
         aria-hidden="true"
-        className="fixed w-full h-full bg-gradient-to-b from-background via-transparent to-background pointer-events-none"
+        className="fixed w-full h-full bg-linear-to-b from-background via-transparent to-background pointer-events-none"
       />
     </>
   );
