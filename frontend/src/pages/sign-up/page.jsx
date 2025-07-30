@@ -16,7 +16,7 @@ const SignUpPage = () => {
       transition={{
         duration: 0.5,
       }}
-      className="max-w-md w-full bg-secondary bg-opacity-20 backdrop-filter backdrop-blur-md rounded-lg shadow-2xl overflow-hidden mx-4 lg:mx-0"
+      className="max-w-md w-full bg-secondary/20 backdrop-filter backdrop-blur-md rounded-lg shadow-2xl overflow-hidden mx-4 lg:mx-0"
     >
       <div className="p-4 lg:p-8">
         <h2 className="text-3xl font-bold mb-6 text-center bg-clip-text">
@@ -25,7 +25,7 @@ const SignUpPage = () => {
 
         <SignUpForm />
       </div>
-      <div className="px-8 py-4 bg-dark-secondary bg-opacity-40 flex-center">
+      <div className="px-8 py-4 bg-dark-secondary/40 flex-center">
         <p className="text-sm text-dark-foreground">
           Already have an account?{" "}
           <Link

@@ -16,7 +16,7 @@ const ProfileActivity = ({ lastSignedIn, createdAt }) => {
       transition={{
         delay: 0.5,
       }}
-      className="p-4 bg-primary bg-opacity-50 rounded-lg backdrop-blur-md border border-primary"
+      className="p-4 bg-primary/50 rounded-lg backdrop-blur-md border border-primary"
     >
       <h3 className="text-lg font-extrabold mb-3">Account Activity</h3>
       <p className="capitalize font-medium">
