@@ -9,7 +9,7 @@ const RootPage = () => {
   const { user } = useAuthStore();
 
   return (
-    <section className="h-full z-50 relative p-4 lg:p-6 space-y-4 backdrop-blur-lg rounded-lg bg-primary bg-opacity-20 drop-shadow-2xl mx-4 lg:mx-0">
+    <section className="h-full z-50 relative p-4 lg:p-6 space-y-4 backdrop-blur-lg rounded-lg bg-primary/20 drop-shadow-2xl mx-4 lg:mx-0">
       <Title />
       <ProfileInformation username={user.username} email={user.email} />
       <ProfileActivity
