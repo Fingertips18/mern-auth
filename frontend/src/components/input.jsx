@@ -18,9 +18,9 @@ const Input = ({ icon: Icon, isValid, ...props }) => {
       <input
         {...props}
         type={type}
-        className={`w-full pl-10 py-2 bg-secondary bg-opacity-50 rounded-lg border  outline-hidden
-        placeholder-foreground/40 transition disabled:bg-opacity-25 disabled:border-secondary/50 
-        disabled:text-foreground/50 disabled:pointer-events-none
+        className={`w-full pl-10 py-2 bg-secondary/50 rounded-lg border  outline-hidden
+        placeholder-foreground/40 transition disabled:bg-secondary/25 disabled:border-secondary/50 
+        disabled:text-foreground/50 disabled:pointer-events-none flex-end
         ${
           value.length > 0
             ? isValid
@@ -33,7 +33,7 @@ const Input = ({ icon: Icon, isValid, ...props }) => {
       {isPassword && (
         <button
           onClick={() => setObscure(!obscure)}
-          className="absolute inset-y-0 right-0 flex-center pr-3"
+          className="absolute inset-y-0 right-0 flex-center pr-3 pl-1.5 cursor-pointer"
           type="button"
         >
           <EyeIcon className="size-5 text-primary" />

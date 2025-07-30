@@ -92,11 +92,17 @@ const AuthService = {
   },
   verifyToken: async () => {
     try {
-      const response = await axios.get(`${baseUrl}${AppRoutes.verifyToken}`);
+      const response = await axios.get(`${baseUrl}${AppRoutes.verifyToken}`, {
+        withCredentials: true,
+      });
 
       return { user: response.data.user, message: response.data.message };
     } catch (error) {
-      console.error(error);
+      if (error.response.status === 401) {
+        console.warn(error);
+      } else {
+        console.error(error);
+      }
       throw error.response.data.message;
     }
   },
