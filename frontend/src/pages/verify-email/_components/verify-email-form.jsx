@@ -93,7 +93,7 @@ const VerifyEmailForm = () => {
             onChange={(e) => onChange(e.target.value, i)}
             onKeyDown={(e) => onKeyDown(e, i)}
             autoComplete="off"
-            className="w-12 h-12 text-center text-2xl font-bold bg-secondary bg-opacity-50 rounded-lg border border-secondary outline-hidden
+            className="w-12 h-12 text-center text-2xl font-bold bg-secondary/50 rounded-lg border border-secondary outline-hidden
             focus:border-primary/20 focus:ring-2 focus:ring-primary placeholder-foreground/40 transition duration-200"
           />
         ))}
