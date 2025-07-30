@@ -54,7 +54,7 @@ This repository features a **MERN** stack authentication system, encompassing us
 3. **Set up environment variables. Create a `.env` file in the root directory:**:
 
    ```dotenv
-   PORT=<PORT>
+   PORT=<PORT> # macOS users: avoid 5000, it may be used by AirPlay
    MONGO_URI=<MONGO_URI>
    JWT_SECRET=<JWT_SECRET>
    NODE_ENV=<NODE_ENV>
