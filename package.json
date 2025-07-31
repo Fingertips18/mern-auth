@@ -23,7 +23,7 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "jose": "^6.0.12",
-    "mongoose": "^8.16.5",
+    "mongoose": "^8.17.0",
     "serve-favicon": "^2.5.1"
   },
   "devDependencies": {
