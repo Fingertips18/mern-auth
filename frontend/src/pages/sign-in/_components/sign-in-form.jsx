@@ -1,19 +1,19 @@
-import { Mail, Lock } from "lucide-react";
-import { Link } from "react-router-dom";
-import { useState } from "react";
-import { toast } from "sonner";
+import { Mail, Lock } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { toast } from 'sonner';
 
-import { ValidateEmail, ValidatePassword } from "@/lib/utils/validations";
-import { AuthService } from "@/lib/services/auth.service";
-import { useAuthStore } from "@/lib/stores/authStore";
-import { AppRoutes } from "@/constants/routes";
-import { Button } from "@/components/button";
-import { Input } from "@/components/input";
+import { ValidateEmail, ValidatePassword } from '@/lib/utils/validations';
+import { AuthService } from '@/lib/services/auth.service';
+import { useAuthStore } from '@/lib/stores/authStore';
+import { AppRoutes } from '@/constants/routes';
+import { Button } from '@/components/button';
+import { Input } from '@/components/input';
 
 const SignInForm = () => {
   const [loading, setLoading] = useState(false);
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const { setUser, setAuthorized } = useAuthStore();
 
   const onSubmit = async (e) => {
@@ -41,36 +41,36 @@ const SignInForm = () => {
     <form onSubmit={onSubmit}>
       <Input
         icon={Mail}
-        type="email"
-        placeholder="example@domain.com"
+        type='email'
+        placeholder='example@domain.com'
         value={email}
         disabled={loading}
-        autoComplete="email"
-        name="email"
+        autoComplete='email'
+        name='email'
         maxLength={30}
         onChange={(e) => setEmail(e.target.value)}
         isValid={emailValid}
       />
       <Input
         icon={Lock}
-        type="password"
-        placeholder="Password"
+        type='password'
+        placeholder='Password'
         value={password}
         disabled={loading}
-        autoComplete="off"
-        name="password"
+        autoComplete='off'
+        name='password'
         maxLength={64}
         onChange={(e) => setPassword(e.target.value)}
         isValid={passwordValid}
       />
       <Link
         to={AppRoutes.forgotPassword}
-        className="text-sm text-dark-accent hover:underline underline-offset-4 font-semibold"
+        className='text-sm text-dark-accent hover:underline underline-offset-4 font-semibold'
       >
         Forgot Password?
       </Link>
 
-      <Button loading={loading} disabled={disabled} label="Sign In" />
+      <Button loading={loading} disabled={disabled} label='Sign In' />
     </form>
   );
 };

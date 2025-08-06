@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
   --font-poppins: Poppins, sans-serif;
@@ -17,10 +17,10 @@
   --color-dark-accent: #62654e;
 
   --drop-shadow-glow: 0 0px 15px var(--accent), 0 0px 60px var(--accent);
-  --drop-shadow-foreground-glow: 0 0px 15px var(--foreground),
-    0 0px 60px var(--foreground);
-  --drop-shadow-primary-glow: 0 0px 15px var(--primary),
-    0 0px 60px var(--primary);
+  --drop-shadow-foreground-glow:
+    0 0px 15px var(--foreground), 0 0px 60px var(--foreground);
+  --drop-shadow-primary-glow:
+    0 0px 15px var(--primary), 0 0px 60px var(--primary);
 }
 
 /*

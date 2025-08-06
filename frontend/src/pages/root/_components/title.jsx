@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const Title = () => {
   return (
@@ -10,10 +10,10 @@ const Title = () => {
       transition={{
         delay: 0.5,
         duration: 0.4,
-        type: "spring",
+        type: 'spring',
         bounce: 0.5,
       }}
-      className="font-bold text-lg lg:text-4xl text-center drop-shadow-foreground-glow"
+      className='font-bold text-lg lg:text-4xl text-center drop-shadow-foreground-glow'
     >
       Welcome
     </motion.h1>

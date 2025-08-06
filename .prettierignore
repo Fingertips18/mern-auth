@@ -1,0 +1,10 @@
+node_modules/
+build/
+dist/
+.npm
+package-lock.json
+.log
+.env*
+.yaml
+.yml
+README.md

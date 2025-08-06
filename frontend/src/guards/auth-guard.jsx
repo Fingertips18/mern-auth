@@ -1,10 +1,10 @@
-import { useCallback, useEffect, useState } from "react";
-import { Navigate, Outlet } from "react-router-dom";
+import { useCallback, useEffect, useState } from 'react';
+import { Navigate, Outlet } from 'react-router-dom';
 
-import { LoadingSpinner } from "@/components/loading-spinner";
-import { AuthService } from "@/lib/services/auth.service";
-import { useAuthStore } from "@/lib/stores/authStore";
-import { AppRoutes } from "@/constants/routes";
+import { LoadingSpinner } from '@/components/loading-spinner';
+import { AuthService } from '@/lib/services/auth.service';
+import { useAuthStore } from '@/lib/stores/authStore';
+import { AppRoutes } from '@/constants/routes';
 
 const AuthGuard = () => {
   const { authorized, setAuthorized, user, setUser } = useAuthStore();

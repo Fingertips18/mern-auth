@@ -6,7 +6,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cross-env NODE_ENV=development&& nodemon backend/index.js",
     "start": "cross-env NODE_ENV=production&& node backend/index.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "format": "prettier --write .",
+    "lint": "eslint ."
   },
   "keywords": [
     "express-js, javascript, mern, authentication, jwt"
@@ -23,16 +25,20 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "jose": "^6.0.12",
-    "mongoose": "^8.16.5",
+    "mongoose": "^8.17.0",
     "serve-favicon": "^2.5.1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.32.0",
     "@types/bcryptjs": "^3.0.0",
     "@types/cookie-parser": "^1.4.9",
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
     "@types/serve-favicon": "^2.5.7",
     "cross-env": "^10.0.0",
-    "nodemon": "^3.1.10"
+    "eslint": "^9.32.0",
+    "globals": "^16.3.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2"
   }
 }
