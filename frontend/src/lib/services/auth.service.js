@@ -1,11 +1,11 @@
-import axios from "axios";
+import axios from 'axios';
 
-import { AppRoutes } from "@/constants/routes";
+import { AppRoutes } from '@/constants/routes';
 
 const baseUrl =
-  import.meta.env.MODE === "development"
+  import.meta.env.MODE === 'development'
     ? `${import.meta.env.VITE_BASE_URL}/api/auth`
-    : "/api/auth";
+    : '/api/auth';
 
 axios.defaults.withCredentials = true;
 
@@ -53,7 +53,7 @@ const AuthService = {
         `${baseUrl}${AppRoutes.forgotPassword}`,
         {
           email,
-        }
+        },
       );
 
       return { message: response.data.message };
@@ -69,7 +69,7 @@ const AuthService = {
         {
           token,
           password,
-        }
+        },
       );
 
       return { message: response.data.message };

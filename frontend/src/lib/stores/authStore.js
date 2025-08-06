@@ -1,5 +1,5 @@
-import { createJSONStorage, devtools, persist } from "zustand/middleware";
-import { create } from "zustand";
+import { createJSONStorage, devtools, persist } from 'zustand/middleware';
+import { create } from 'zustand';
 
 const useAuthStore = create(
   devtools(
@@ -11,15 +11,15 @@ const useAuthStore = create(
         setAuthorized: (authorized) => set({ authorized: authorized }),
       }),
       {
-        name: "mern-auth",
+        name: 'mern-auth',
         partialize: (state) => ({
           user: state.user,
           authorized: state.authorized,
         }),
         storage: createJSONStorage(() => sessionStorage),
-      }
-    )
-  )
+      },
+    ),
+  ),
 );
 
 export { useAuthStore };

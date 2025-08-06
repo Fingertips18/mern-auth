@@ -1,18 +1,18 @@
-import { useParams, useNavigate } from "react-router-dom";
-import { Lock } from "lucide-react";
-import { useState } from "react";
-import { toast } from "sonner";
+import { useParams, useNavigate } from 'react-router-dom';
+import { Lock } from 'lucide-react';
+import { useState } from 'react';
+import { toast } from 'sonner';
 
-import { ValidatePassword } from "@/lib/utils/validations";
-import { AuthService } from "@/lib/services/auth.service";
-import { AppRoutes } from "@/constants/routes";
-import { Button } from "@/components/button";
-import { Input } from "@/components/input";
+import { ValidatePassword } from '@/lib/utils/validations';
+import { AuthService } from '@/lib/services/auth.service';
+import { AppRoutes } from '@/constants/routes';
+import { Button } from '@/components/button';
+import { Input } from '@/components/input';
 
 const ResetPasswordForm = () => {
   const [loading, setLoading] = useState(false);
-  const [password, setPassword] = useState("");
-  const [confirmPassword, setConfirmPassword] = useState("");
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const { token } = useParams();
   const navigate = useNavigate();
 
@@ -47,24 +47,24 @@ const ResetPasswordForm = () => {
     <form onSubmit={onSubmit}>
       <Input
         icon={Lock}
-        type="password"
-        placeholder="Password"
+        type='password'
+        placeholder='Password'
         value={password}
         disabled={loading}
-        autoComplete="off"
-        name="password"
+        autoComplete='off'
+        name='password'
         maxLength={64}
         onChange={(e) => setPassword(e.target.value)}
         isValid={passwordValid}
       />
       <Input
         icon={Lock}
-        type="password"
-        placeholder="Confirm Password"
+        type='password'
+        placeholder='Confirm Password'
         value={confirmPassword}
         disabled={loading}
-        autoComplete="off"
-        name="confirm-password"
+        autoComplete='off'
+        name='confirm-password'
         maxLength={64}
         onChange={(e) => setConfirmPassword(e.target.value)}
         isValid={confirmPasswordValid}
@@ -73,9 +73,9 @@ const ResetPasswordForm = () => {
       <Button
         loading={loading}
         disabled={disabled}
-        label="Set New Password"
+        label='Set New Password'
         withLoader={false}
-        loadingLabel="Resetting..."
+        loadingLabel='Resetting...'
       />
     </form>
   );

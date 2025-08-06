@@ -1,4 +1,4 @@
-import { Colors } from "../constants/colors.constant.js";
+import { Colors } from '../constants/colors.constant.js';
 
 export const VERIFICATION_EMAIL_TEMPLATE = `
 <div style="font-family: Arial, sans-serif; line-height: 1.6; color: ${Colors.foreground}; max-width: 600px; margin: 0 auto; padding: 20px;">
