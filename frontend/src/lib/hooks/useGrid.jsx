@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from 'react';
 
 const useGrid = (size) => {
   const [grid, setGrid] = useState({
@@ -16,9 +16,9 @@ const useGrid = (size) => {
   useEffect(() => {
     getGrid();
 
-    window.addEventListener("resize", getGrid);
+    window.addEventListener('resize', getGrid);
 
-    return () => window.removeEventListener("resize", getGrid);
+    return () => window.removeEventListener('resize', getGrid);
   }, [getGrid]);
 
   return grid;

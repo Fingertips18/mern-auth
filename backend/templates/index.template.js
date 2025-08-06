@@ -1,4 +1,4 @@
-import { Colors } from "../constants/colors.constant.js";
+import { Colors } from '../constants/colors.constant.js';
 
 export const INDEX_TEMPLATE = `
 <!DOCTYPE html>
