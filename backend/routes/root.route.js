@@ -1,7 +1,7 @@
-import express from "express";
+import express from 'express';
 
-import { INDEX_TEMPLATE } from "../templates/index.template.js";
-import { Routes } from "../constants/routes.constant.js";
+import { INDEX_TEMPLATE } from '../templates/index.template.js';
+import { Routes } from '../constants/routes.constant.js';
 
 const router = express.Router();
 
